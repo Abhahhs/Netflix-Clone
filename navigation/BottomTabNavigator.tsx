@@ -17,6 +17,7 @@ export default function BottomTabNavigator() {
   const colorScheme = useColorScheme();
 
   return (
+    // 4 navigation screen
     <BottomTab.Navigator
       initialRouteName="Home"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
