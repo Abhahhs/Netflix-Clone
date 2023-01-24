@@ -1,7 +1,3 @@
-/* tslint:disable */
-/* eslint-disable */
-//  This file was automatically generated and should not be edited.
-
 export type CreateCategoryInput = {
   id?: string | null,
   title: string,
@@ -10,8 +6,8 @@ export type CreateCategoryInput = {
 
 export type ModelCategoryConditionInput = {
   title?: ModelStringInput | null,
-  and?: Array< ModelCategoryConditionInput | null > | null,
-  or?: Array< ModelCategoryConditionInput | null > | null,
+  and?: Array<ModelCategoryConditionInput | null> | null,
+  or?: Array<ModelCategoryConditionInput | null> | null,
   not?: ModelCategoryConditionInput | null,
 };
 
@@ -24,7 +20,7 @@ export type ModelStringInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -52,7 +48,7 @@ export type ModelSizeInput = {
   lt?: number | null,
   ge?: number | null,
   gt?: number | null,
-  between?: Array< number | null > | null,
+  between?: Array<number | null> | null,
 };
 
 export type UpdateCategoryInput = {
@@ -88,8 +84,8 @@ export type ModelMovieConditionInput = {
   cast?: ModelStringInput | null,
   creator?: ModelStringInput | null,
   categoryID?: ModelIDInput | null,
-  and?: Array< ModelMovieConditionInput | null > | null,
-  or?: Array< ModelMovieConditionInput | null > | null,
+  and?: Array<ModelMovieConditionInput | null> | null,
+  or?: Array<ModelMovieConditionInput | null> | null,
   not?: ModelMovieConditionInput | null,
 };
 
@@ -100,7 +96,7 @@ export type ModelIntInput = {
   lt?: number | null,
   ge?: number | null,
   gt?: number | null,
-  between?: Array< number | null > | null,
+  between?: Array<number | null> | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
 };
@@ -114,7 +110,7 @@ export type ModelIDInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -149,8 +145,8 @@ export type CreateSeasonInput = {
 export type ModelSeasonConditionInput = {
   name?: ModelStringInput | null,
   movieID?: ModelIDInput | null,
-  and?: Array< ModelSeasonConditionInput | null > | null,
-  or?: Array< ModelSeasonConditionInput | null > | null,
+  and?: Array<ModelSeasonConditionInput | null> | null,
+  or?: Array<ModelSeasonConditionInput | null> | null,
   not?: ModelSeasonConditionInput | null,
 };
 
@@ -184,8 +180,8 @@ export type ModelEpisodeConditionInput = {
   plot?: ModelStringInput | null,
   video?: ModelStringInput | null,
   seasonID?: ModelIDInput | null,
-  and?: Array< ModelEpisodeConditionInput | null > | null,
-  or?: Array< ModelEpisodeConditionInput | null > | null,
+  and?: Array<ModelEpisodeConditionInput | null> | null,
+  or?: Array<ModelEpisodeConditionInput | null> | null,
   not?: ModelEpisodeConditionInput | null,
 };
 
@@ -208,8 +204,8 @@ export type DeleteEpisodeInput = {
 export type ModelCategoryFilterInput = {
   id?: ModelIDInput | null,
   title?: ModelStringInput | null,
-  and?: Array< ModelCategoryFilterInput | null > | null,
-  or?: Array< ModelCategoryFilterInput | null > | null,
+  and?: Array<ModelCategoryFilterInput | null> | null,
+  or?: Array<ModelCategoryFilterInput | null> | null,
   not?: ModelCategoryFilterInput | null,
 };
 
@@ -223,8 +219,8 @@ export type ModelMovieFilterInput = {
   cast?: ModelStringInput | null,
   creator?: ModelStringInput | null,
   categoryID?: ModelIDInput | null,
-  and?: Array< ModelMovieFilterInput | null > | null,
-  or?: Array< ModelMovieFilterInput | null > | null,
+  and?: Array<ModelMovieFilterInput | null> | null,
+  or?: Array<ModelMovieFilterInput | null> | null,
   not?: ModelMovieFilterInput | null,
 };
 
@@ -232,8 +228,8 @@ export type ModelSeasonFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   movieID?: ModelIDInput | null,
-  and?: Array< ModelSeasonFilterInput | null > | null,
-  or?: Array< ModelSeasonFilterInput | null > | null,
+  and?: Array<ModelSeasonFilterInput | null> | null,
+  or?: Array<ModelSeasonFilterInput | null> | null,
   not?: ModelSeasonFilterInput | null,
 };
 
@@ -245,8 +241,8 @@ export type ModelEpisodeFilterInput = {
   plot?: ModelStringInput | null,
   video?: ModelStringInput | null,
   seasonID?: ModelIDInput | null,
-  and?: Array< ModelEpisodeFilterInput | null > | null,
-  or?: Array< ModelEpisodeFilterInput | null > | null,
+  and?: Array<ModelEpisodeFilterInput | null> | null,
+  or?: Array<ModelEpisodeFilterInput | null> | null,
   not?: ModelEpisodeFilterInput | null,
 };
 
@@ -256,13 +252,13 @@ export type CreateCategoryMutationVariables = {
 };
 
 export type CreateCategoryMutation = {
-  createCategory:  {
+  createCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -278,7 +274,7 @@ export type CreateCategoryMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -296,13 +292,13 @@ export type UpdateCategoryMutationVariables = {
 };
 
 export type UpdateCategoryMutation = {
-  updateCategory:  {
+  updateCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -318,7 +314,7 @@ export type UpdateCategoryMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -336,13 +332,13 @@ export type DeleteCategoryMutationVariables = {
 };
 
 export type DeleteCategoryMutation = {
-  deleteCategory:  {
+  deleteCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -358,7 +354,7 @@ export type DeleteCategoryMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -376,7 +372,7 @@ export type CreateMovieMutationVariables = {
 };
 
 export type CreateMovieMutation = {
-  createMovie:  {
+  createMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -387,9 +383,9 @@ export type CreateMovieMutation = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -399,7 +395,7 @@ export type CreateMovieMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -417,7 +413,7 @@ export type UpdateMovieMutationVariables = {
 };
 
 export type UpdateMovieMutation = {
-  updateMovie:  {
+  updateMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -428,9 +424,9 @@ export type UpdateMovieMutation = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -440,7 +436,7 @@ export type UpdateMovieMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -458,7 +454,7 @@ export type DeleteMovieMutationVariables = {
 };
 
 export type DeleteMovieMutation = {
-  deleteMovie:  {
+  deleteMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -469,9 +465,9 @@ export type DeleteMovieMutation = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -481,7 +477,7 @@ export type DeleteMovieMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -499,12 +495,12 @@ export type CreateSeasonMutationVariables = {
 };
 
 export type CreateSeasonMutation = {
-  createSeason:  {
+  createSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -515,7 +511,7 @@ export type CreateSeasonMutation = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -526,9 +522,9 @@ export type CreateSeasonMutation = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -542,7 +538,7 @@ export type CreateSeasonMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -560,12 +556,12 @@ export type UpdateSeasonMutationVariables = {
 };
 
 export type UpdateSeasonMutation = {
-  updateSeason:  {
+  updateSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -576,7 +572,7 @@ export type UpdateSeasonMutation = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -587,9 +583,9 @@ export type UpdateSeasonMutation = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -603,7 +599,7 @@ export type UpdateSeasonMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -621,12 +617,12 @@ export type DeleteSeasonMutationVariables = {
 };
 
 export type DeleteSeasonMutation = {
-  deleteSeason:  {
+  deleteSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -637,7 +633,7 @@ export type DeleteSeasonMutation = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -648,9 +644,9 @@ export type DeleteSeasonMutation = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -664,7 +660,7 @@ export type DeleteSeasonMutation = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -682,7 +678,7 @@ export type CreateEpisodeMutationVariables = {
 };
 
 export type CreateEpisodeMutation = {
-  createEpisode:  {
+  createEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -691,12 +687,12 @@ export type CreateEpisodeMutation = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -713,7 +709,7 @@ export type CreateEpisodeMutation = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -738,7 +734,7 @@ export type UpdateEpisodeMutationVariables = {
 };
 
 export type UpdateEpisodeMutation = {
-  updateEpisode:  {
+  updateEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -747,12 +743,12 @@ export type UpdateEpisodeMutation = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -769,7 +765,7 @@ export type UpdateEpisodeMutation = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -794,7 +790,7 @@ export type DeleteEpisodeMutationVariables = {
 };
 
 export type DeleteEpisodeMutation = {
-  deleteEpisode:  {
+  deleteEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -803,12 +799,12 @@ export type DeleteEpisodeMutation = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -825,7 +821,7 @@ export type DeleteEpisodeMutation = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -852,13 +848,13 @@ export type SyncCategoriesQueryVariables = {
 };
 
 export type SyncCategoriesQuery = {
-  syncCategories:  {
+  syncCategories: {
     __typename: "ModelCategoryConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Category",
       id: string,
       title: string,
-      movies:  {
+      movies: {
         __typename: "ModelMovieConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -868,7 +864,7 @@ export type SyncCategoriesQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -879,13 +875,13 @@ export type GetCategoryQueryVariables = {
 };
 
 export type GetCategoryQuery = {
-  getCategory:  {
+  getCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -901,7 +897,7 @@ export type GetCategoryQuery = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -920,13 +916,13 @@ export type ListCategorysQueryVariables = {
 };
 
 export type ListCategorysQuery = {
-  listCategorys:  {
+  listCategorys: {
     __typename: "ModelCategoryConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Category",
       id: string,
       title: string,
-      movies:  {
+      movies: {
         __typename: "ModelMovieConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -936,7 +932,7 @@ export type ListCategorysQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -950,9 +946,9 @@ export type SyncMoviesQueryVariables = {
 };
 
 export type SyncMoviesQuery = {
-  syncMovies:  {
+  syncMovies: {
     __typename: "ModelMovieConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Movie",
       id: string,
       title: string,
@@ -963,7 +959,7 @@ export type SyncMoviesQuery = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -973,7 +969,7 @@ export type SyncMoviesQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -984,7 +980,7 @@ export type GetMovieQueryVariables = {
 };
 
 export type GetMovieQuery = {
-  getMovie:  {
+  getMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -995,9 +991,9 @@ export type GetMovieQuery = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -1007,7 +1003,7 @@ export type GetMovieQuery = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1026,9 +1022,9 @@ export type ListMoviesQueryVariables = {
 };
 
 export type ListMoviesQuery = {
-  listMovies:  {
+  listMovies: {
     __typename: "ModelMovieConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Movie",
       id: string,
       title: string,
@@ -1039,7 +1035,7 @@ export type ListMoviesQuery = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1049,7 +1045,7 @@ export type ListMoviesQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -1063,14 +1059,14 @@ export type SyncSeasonsQueryVariables = {
 };
 
 export type SyncSeasonsQuery = {
-  syncSeasons:  {
+  syncSeasons: {
     __typename: "ModelSeasonConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1087,7 +1083,7 @@ export type SyncSeasonsQuery = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1097,7 +1093,7 @@ export type SyncSeasonsQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -1108,12 +1104,12 @@ export type GetSeasonQueryVariables = {
 };
 
 export type GetSeasonQuery = {
-  getSeason:  {
+  getSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -1124,7 +1120,7 @@ export type GetSeasonQuery = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1135,9 +1131,9 @@ export type GetSeasonQuery = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -1151,7 +1147,7 @@ export type GetSeasonQuery = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1170,14 +1166,14 @@ export type ListSeasonsQueryVariables = {
 };
 
 export type ListSeasonsQuery = {
-  listSeasons:  {
+  listSeasons: {
     __typename: "ModelSeasonConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1194,7 +1190,7 @@ export type ListSeasonsQuery = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1204,7 +1200,7 @@ export type ListSeasonsQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -1218,9 +1214,9 @@ export type SyncEpisodesQueryVariables = {
 };
 
 export type SyncEpisodesQuery = {
-  syncEpisodes:  {
+  syncEpisodes: {
     __typename: "ModelEpisodeConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Episode",
       id: string,
       title: string,
@@ -1229,7 +1225,7 @@ export type SyncEpisodesQuery = {
       plot: string | null,
       video: string,
       seasonID: string,
-      season:  {
+      season: {
         __typename: "Season",
         id: string,
         name: string,
@@ -1245,7 +1241,7 @@ export type SyncEpisodesQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
@@ -1256,7 +1252,7 @@ export type GetEpisodeQueryVariables = {
 };
 
 export type GetEpisodeQuery = {
-  getEpisode:  {
+  getEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -1265,12 +1261,12 @@ export type GetEpisodeQuery = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1287,7 +1283,7 @@ export type GetEpisodeQuery = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1313,9 +1309,9 @@ export type ListEpisodesQueryVariables = {
 };
 
 export type ListEpisodesQuery = {
-  listEpisodes:  {
+  listEpisodes: {
     __typename: "ModelEpisodeConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Episode",
       id: string,
       title: string,
@@ -1324,7 +1320,7 @@ export type ListEpisodesQuery = {
       plot: string | null,
       video: string,
       seasonID: string,
-      season:  {
+      season: {
         __typename: "Season",
         id: string,
         name: string,
@@ -1340,20 +1336,20 @@ export type ListEpisodesQuery = {
       _lastChangedAt: number,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null> | null,
     nextToken: string | null,
     startedAt: number | null,
   } | null,
 };
 
 export type OnCreateCategorySubscription = {
-  onCreateCategory:  {
+  onCreateCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -1369,7 +1365,7 @@ export type OnCreateCategorySubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1382,13 +1378,13 @@ export type OnCreateCategorySubscription = {
 };
 
 export type OnUpdateCategorySubscription = {
-  onUpdateCategory:  {
+  onUpdateCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -1404,7 +1400,7 @@ export type OnUpdateCategorySubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1417,13 +1413,13 @@ export type OnUpdateCategorySubscription = {
 };
 
 export type OnDeleteCategorySubscription = {
-  onDeleteCategory:  {
+  onDeleteCategory: {
     __typename: "Category",
     id: string,
     title: string,
-    movies:  {
+    movies: {
       __typename: "ModelMovieConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Movie",
         id: string,
         title: string,
@@ -1439,7 +1435,7 @@ export type OnDeleteCategorySubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1452,7 +1448,7 @@ export type OnDeleteCategorySubscription = {
 };
 
 export type OnCreateMovieSubscription = {
-  onCreateMovie:  {
+  onCreateMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -1463,9 +1459,9 @@ export type OnCreateMovieSubscription = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -1475,7 +1471,7 @@ export type OnCreateMovieSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1488,7 +1484,7 @@ export type OnCreateMovieSubscription = {
 };
 
 export type OnUpdateMovieSubscription = {
-  onUpdateMovie:  {
+  onUpdateMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -1499,9 +1495,9 @@ export type OnUpdateMovieSubscription = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -1511,7 +1507,7 @@ export type OnUpdateMovieSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1524,7 +1520,7 @@ export type OnUpdateMovieSubscription = {
 };
 
 export type OnDeleteMovieSubscription = {
-  onDeleteMovie:  {
+  onDeleteMovie: {
     __typename: "Movie",
     id: string,
     title: string,
@@ -1535,9 +1531,9 @@ export type OnDeleteMovieSubscription = {
     cast: string | null,
     creator: string | null,
     categoryID: string,
-    seasons:  {
+    seasons: {
       __typename: "ModelSeasonConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Season",
         id: string,
         name: string,
@@ -1547,7 +1543,7 @@ export type OnDeleteMovieSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1560,12 +1556,12 @@ export type OnDeleteMovieSubscription = {
 };
 
 export type OnCreateSeasonSubscription = {
-  onCreateSeason:  {
+  onCreateSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -1576,7 +1572,7 @@ export type OnCreateSeasonSubscription = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1587,9 +1583,9 @@ export type OnCreateSeasonSubscription = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -1603,7 +1599,7 @@ export type OnCreateSeasonSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1616,12 +1612,12 @@ export type OnCreateSeasonSubscription = {
 };
 
 export type OnUpdateSeasonSubscription = {
-  onUpdateSeason:  {
+  onUpdateSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -1632,7 +1628,7 @@ export type OnUpdateSeasonSubscription = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1643,9 +1639,9 @@ export type OnUpdateSeasonSubscription = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -1659,7 +1655,7 @@ export type OnUpdateSeasonSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1672,12 +1668,12 @@ export type OnUpdateSeasonSubscription = {
 };
 
 export type OnDeleteSeasonSubscription = {
-  onDeleteSeason:  {
+  onDeleteSeason: {
     __typename: "Season",
     id: string,
     name: string,
     movieID: string,
-    movie:  {
+    movie: {
       __typename: "Movie",
       id: string,
       title: string,
@@ -1688,7 +1684,7 @@ export type OnDeleteSeasonSubscription = {
       cast: string | null,
       creator: string | null,
       categoryID: string,
-      seasons:  {
+      seasons: {
         __typename: "ModelSeasonConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1699,9 +1695,9 @@ export type OnDeleteSeasonSubscription = {
       createdAt: string,
       updatedAt: string,
     } | null,
-    episodes:  {
+    episodes: {
       __typename: "ModelEpisodeConnection",
-      items:  Array< {
+      items: Array<{
         __typename: "Episode",
         id: string,
         title: string,
@@ -1715,7 +1711,7 @@ export type OnDeleteSeasonSubscription = {
         _lastChangedAt: number,
         createdAt: string,
         updatedAt: string,
-      } | null > | null,
+      } | null> | null,
       nextToken: string | null,
       startedAt: number | null,
     } | null,
@@ -1728,7 +1724,7 @@ export type OnDeleteSeasonSubscription = {
 };
 
 export type OnCreateEpisodeSubscription = {
-  onCreateEpisode:  {
+  onCreateEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -1737,12 +1733,12 @@ export type OnCreateEpisodeSubscription = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1759,7 +1755,7 @@ export type OnCreateEpisodeSubscription = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1779,7 +1775,7 @@ export type OnCreateEpisodeSubscription = {
 };
 
 export type OnUpdateEpisodeSubscription = {
-  onUpdateEpisode:  {
+  onUpdateEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -1788,12 +1784,12 @@ export type OnUpdateEpisodeSubscription = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1810,7 +1806,7 @@ export type OnUpdateEpisodeSubscription = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
@@ -1830,7 +1826,7 @@ export type OnUpdateEpisodeSubscription = {
 };
 
 export type OnDeleteEpisodeSubscription = {
-  onDeleteEpisode:  {
+  onDeleteEpisode: {
     __typename: "Episode",
     id: string,
     title: string,
@@ -1839,12 +1835,12 @@ export type OnDeleteEpisodeSubscription = {
     plot: string | null,
     video: string,
     seasonID: string,
-    season:  {
+    season: {
       __typename: "Season",
       id: string,
       name: string,
       movieID: string,
-      movie:  {
+      movie: {
         __typename: "Movie",
         id: string,
         title: string,
@@ -1861,7 +1857,7 @@ export type OnDeleteEpisodeSubscription = {
         createdAt: string,
         updatedAt: string,
       } | null,
-      episodes:  {
+      episodes: {
         __typename: "ModelEpisodeConnection",
         nextToken: string | null,
         startedAt: number | null,
